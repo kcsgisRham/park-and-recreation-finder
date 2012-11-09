@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Messages>
+  <addressToLocate>Enter address to Locate.</addressToLocate>
+  <activityToLocate>Enter park or activity name to Locate.</activityToLocate>
+  <unableToLocate>Unable to locate specified address.</unableToLocate>
+  <adressFormat>Please enter address in [Address, City, State, Zip] or in [Address, Zip] format.</adressFormat> 
+  <geoLocation>You are currently outside the supported area.</geoLocation>
+  <geolocationTimeout>The browser is unable to supply a position at this time.</geolocationTimeout>
+  <geolocationPositionUnavailable>Position unavailable.</geolocationPositionUnavailable>
+  <geolocationPermissionDenied>Permission denied.</geolocationPermissionDenied>
+  <geolocationUnKnownError>Unknown error.</geolocationUnKnownError> 
+  <tinyURLEngine>Bitly API is not able to generate tiny URL.</tinyURLEngine>  
+</Messages>
