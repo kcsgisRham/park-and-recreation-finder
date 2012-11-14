@@ -26,7 +26,7 @@ Requirements
 
 * ArcGIS for Server 10.1 - [About](http://www.esri.com/software/arcgis/arcgisserver)
 
-* Microsoft ASP.net Framework 4.0
+* Microsoft ASP.net Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
 License
 ------------
