@@ -17,8 +17,6 @@ This application uses the 2.8 version of [Esri's ArcGIS API for JavaScript](http
 
 [Esri's ArcGIS.com Help](http://resources.arcgis.com/en/help/arcgisonline/) site describes how to create web maps and web map applications.
 
-[Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/) on the ArcGIS Resource Center can guide you in the setup and configuration of your app.
-
 Requirements
 ------------
 
