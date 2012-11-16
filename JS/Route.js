@@ -1,4 +1,19 @@
-﻿//function for configuring the route betwwen two points
+﻿/*
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+ */
+//function for configuring the route betwwen two points
 function ConfigureRoute(mapPoint) {
     ShowLoadingMessage("Loading...");
     ShowDojoLoading(dojo.byId('scrollbar_container2'));
@@ -14,7 +29,7 @@ function ConfigureRoute(mapPoint) {
 //function for displaying the route between two points
 function ShowRoute(solveResult) {
     map.graphics.clear(routeSymbol);
-    var directions = solveResult.routeResults[0].directions;   
+    var directions = solveResult.routeResults[0].directions;
     //Add route to the map
     map.graphics.add(new esri.Graphic(directions.mergedGeometry, routeSymbol));
     if (!layer) {
@@ -56,7 +71,7 @@ function ShowRoute(solveResult) {
             tdDirVal.innerHTML = feature.attributes.text.replace('Location 1', map.getLayer(tempGraphicsLayerId).graphics[0].attributes.Address);
         }
         else if (i == (solveResult.routeResults[0].directions.features.length - 1)) {
-            tdDirVal.innerHTML = feature.attributes.text.replace('Location 2', dojo.byId('leftInfoWindowHeader').innerHTML);                    
+            tdDirVal.innerHTML = feature.attributes.text.replace('Location 2', dojo.byId('leftInfoWindowHeader').innerHTML);
         }
         else {
             if (miles) {

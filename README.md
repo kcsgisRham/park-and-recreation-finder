@@ -20,7 +20,7 @@ This application uses the 2.8 version of [Esri's ArcGIS API for JavaScript](http
 Requirements
 ------------
 
-* Download the sample data - [Data](http://www.esri.com/)
+* Find out more about the application and download sample data - [Data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389)
 
 * ArcGIS for Desktop 10.1 - [About](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 

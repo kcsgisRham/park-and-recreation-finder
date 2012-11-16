@@ -1,12 +1,27 @@
-﻿var activityCount; //variable for storing the count of activities list
+﻿/*
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+ */
+var activityCount; //variable for storing the count of activities list
 var distance; //variable for storing the distances between points
 var features = []; //Array for storing the features that are in the buffer region
 var mapPoint; //variable for storing map point location
-var parkCount; //variable for storing the count of parks list 
+var parkCount; //variable for storing the count of parks list
 var pollPoint; //varible for storing the selected park geometry
 
 //Function to locate the entered address on the map
-function Locate(evt) {    
+function Locate(evt) {
     if (!(dojo.byId('txtAddress').disabled)) {
         if (dojo.byId('spanAddress').className == 'text') {
             if (dojo.byId("txtAddress").value.trim() == "") {
@@ -120,7 +135,7 @@ function PopulateSearchItem(featureSet) {
                 CreateParkDetails(this, features);
                 CreateParkDirections(this, features);
                 if (mapPoint) {
-                    ConfigureRoute(mapPoint);                                 
+                    ConfigureRoute(mapPoint);
                 }
             }
             tr.appendChild(td1);
@@ -138,7 +153,7 @@ function PopulateSearchItem(featureSet) {
         FindTaskResults(featureSet[0]);
         newLeftOffice = 0;
         CreateParkDetails(null, features);
-        CreateParkDirections(null, features);        
+        CreateParkDirections(null, features);
     }
     else {
         featureID = '';
@@ -155,13 +170,13 @@ function PopulateSearchItem(featureSet) {
     }
 }
 
-//function for locating selected park or activity 
+//function for locating selected park or activity
 function FindTaskResults(results) {
     map.graphics.clear();
     map.infoWindow.hide();
     for (var i in map.getLayer(devPlanLayerID).fields) {
         if (map.getLayer(devPlanLayerID).objectIdField == map.getLayer(devPlanLayerID).fields[i].name) {
-            var objectId = map.getLayer(devPlanLayerID).fields[i].alias;          
+            var objectId = map.getLayer(devPlanLayerID).fields[i].alias;
         }
         if (infoWindowHeader[0].FieldName == map.getLayer(devPlanLayerID).fields[i].name) {
             var facilityName = map.getLayer(devPlanLayerID).fields[i].alias;
@@ -174,16 +189,16 @@ function FindTaskResults(results) {
     else {
     var query = new esri.tasks.Query;
     query.outSpatialReference = map.spatialReference;
-    query.where = infoWindowHeader[0].FieldName + "= '" + results.feature.attributes[facilityName] + "'";      
+    query.where = infoWindowHeader[0].FieldName + "= '" + results.feature.attributes[facilityName] + "'";
         queryTask.executeForIds(query, function (fset) {
           featureID=  fset[0];
-        });        
+        });
     }
     if (!mapPoint) {
         map.centerAndZoom(results.feature.geometry, map._slider.maximum - 2);
     }
-    HideRipple();    
-    GlowRipple(results.feature.geometry);   
+    HideRipple();
+    GlowRipple(results.feature.geometry);
 }
 
 //function for displaying the activities with their matching name
@@ -205,7 +220,7 @@ function CreateActivityList() {
             }
         }
     }
-    if (fieldSearch.length == 0) {             
+    if (fieldSearch.length == 0) {
         dojo.byId('spanActivityListContainer').innerHTML = 'Found ' + fieldSearch.length + ' park(s) with matching activity';
         CreateScrollbar(dojo.byId('divActivityListContainer'), dojo.byId('divActivityList'));
     }
@@ -418,7 +433,7 @@ function GeoCodeAddress(evt) {
     if (!validAddressFlag) {
         if (evt.id != 'directionSearch') {
             dojo.byId('txtAddress').value = '';
-            dojo.byId('txtAddress').focus();            
+            dojo.byId('txtAddress').focus();
         }
         else {
             dojo.byId('txtDAddress').value = '';
@@ -465,8 +480,8 @@ function ShowLocatedAddress(candidates, evt) {
             var symbol = new esri.symbol.PictureMarkerSymbol(locatorMarkupSymbolPath, 25, 25);
             var attr = { Address: dojo.byId('txtDAddress').value };
             var graphic = new esri.Graphic(mapPoint, symbol, attr, null);
-            map.getLayer(tempGraphicsLayerId).add(graphic);      
-            ConfigureRoute(mapPoint);         
+            map.getLayer(tempGraphicsLayerId).add(graphic);
+            ConfigureRoute(mapPoint);
         }
         else {
 
@@ -579,7 +594,7 @@ function ShowBuffer(geometries) {
     dojo.forEach(geometries, function (geometry) {
         AddGraphic(map.getLayer(tempBufferLayer), symbol, geometry);
     });
-    map.setExtent(geometries[0].getExtent().expand(1.6));   
+    map.setExtent(geometries[0].getExtent().expand(1.6));
     QueryLayer(geometries[0]);
 }
 
@@ -618,7 +633,7 @@ function CreateDistance(featureset) {
         distances[featureset.features[i].attributes[infoWindowHeader[0].FieldName]].push({ dist: dojo.number.format(distance) });
         if (i == (featureset.features.length - 1)) {
             for (var featureCount = 0; featureCount < featureset.features.length; featureCount++) {
-                if (!(featureDetails[featureset.features[featureCount].attributes[infoWindowHeader[0].FieldName]])) {              
+                if (!(featureDetails[featureset.features[featureCount].attributes[infoWindowHeader[0].FieldName]])) {
                     featureDetails[featureset.features[featureCount].attributes[infoWindowHeader[0].FieldName]] = [];
                     featureDetails[featureset.features[featureCount].attributes[infoWindowHeader[0].FieldName]].push({ name: featureCount, attributes: featureset.features[featureCount].attributes, geometry: featureset.features[featureCount].geometry, dist: distances[featureset.features[featureCount].attributes[infoWindowHeader[0].FieldName]][0].dist });
                 }
@@ -840,7 +855,7 @@ function CreateParkDetails(point, features) {
                 if (attributes[devPlanLayer.fields[i].name]) {
                     var date = new js.date();
                     var utcMilliseconds = Number(attributes[devPlanLayer.fields[i].name]);
-                    attributes[devPlanLayer.fields[i].name] = dojo.date.locale.format(date.utcTimestampFromMs(utcMilliseconds), { datePattern: formatDateAs, selector: "date" });                  
+                    attributes[devPlanLayer.fields[i].name] = dojo.date.locale.format(date.utcTimestampFromMs(utcMilliseconds), { datePattern: formatDateAs, selector: "date" });
                 }
             }
         }
@@ -962,7 +977,7 @@ function CreateParkDetails(point, features) {
         }
         else {
             for (var l = 0; l < devPlanLayer.fields.length; l++) {
-                var field = infoActivity[j].FieldName;              
+                var field = infoActivity[j].FieldName;
                 if (devPlanLayer.fields[l].name == field) {
                     var alis = devPlanLayer.fields[l].alias;
                 }
@@ -1138,7 +1153,7 @@ function CreateParkDirections(point, features) {
         spanTable.cellSpacing = 0;
         spanTable.cellPadding = 0;
         spanTable.style.fontSize = 10.5 +'px';
-        divActivity.appendChild(spanTable);     
+        divActivity.appendChild(spanTable);
         var spanTbody = document.createElement('tbody');
         spanTable.appendChild(spanTbody);
         var spanTr = document.createElement('tr');
@@ -1172,7 +1187,7 @@ function CreateParkDirections(point, features) {
         }
         trAct.appendChild(tdLoc);
         var btnLocation = document.createElement('button');
-        btnLocation.id = 'btnCurrentLocation';       
+        btnLocation.id = 'btnCurrentLocation';
         tdLoc.appendChild(btnLocation);
         var dojoButton = new dijit.form.ToggleButton({
             label: "<img src='images/imgGeolocation.png' style='height:20px;width:20px;cursor:pointer'/>",
@@ -1203,11 +1218,11 @@ function CreateParkDirections(point, features) {
             text.style.width = '150px';
         }
         if (mapPoint) {
-                text.value = map.getLayer(tempGraphicsLayerId).graphics[0].attributes.Address;          
+                text.value = map.getLayer(tempGraphicsLayerId).graphics[0].attributes.Address;
         }
         else {
             text.value = defaultAddress;
-        }     
+        }
         text.setAttribute("placeholder", "Address,zip");
         text.style.backgroundColor = "#3C4824";
         text.style.color = "#F5F5DC";

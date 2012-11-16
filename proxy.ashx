@@ -1,5 +1,20 @@
 <%@ WebHandler Language="C#" Class="proxy" %>
 /*
+ | Copyright 2012 Esri
+ |
+ | Licensed under the Apache License, Version 2.0 (the "License");
+ | you may not use this file except in compliance with the License.
+ | You may obtain a copy of the License at
+ |
+ |    http://www.apache.org/licenses/LICENSE-2.0
+ |
+ | Unless required by applicable law or agreed to in writing, software
+ | distributed under the License is distributed on an "AS IS" BASIS,
+ | WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ | See the License for the specific language governing permissions and
+ | limitations under the License.
+ */
+/*
   This proxy page does not have any security checks. It is highly recommended
   that a user deploying this proxy page on their web server, add appropriate
   security checks, for example checking request path, username/password, target
@@ -19,7 +34,7 @@ using System.Web.Caching;
 /// the proxy.config file to determine properties of the server.
 /// </summary>
 public class proxy : IHttpHandler {
-  
+
     public void ProcessRequest (HttpContext context) {
 
         HttpResponse response = context.Response;
@@ -37,23 +52,23 @@ public class proxy : IHttpHandler {
             else
                 uri += "?token=" + token;
         }
-        		
+
         System.Net.HttpWebRequest req = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(uri);
-        
+
         //code added to use default credentails for authenticating the request via proxy
         req.UseDefaultCredentials = true;
         req.Credentials = System.Net.CredentialCache.DefaultCredentials;
-        
+
         req.Method = context.Request.HttpMethod;
         req.ServicePoint.Expect100Continue = false;
-                
+
         // Set body of request for POST requests
         if (context.Request.InputStream.Length > 0)
         {
             byte[] bytes = new byte[context.Request.InputStream.Length];
             context.Request.InputStream.Read(bytes, 0, (int)context.Request.InputStream.Length);
             req.ContentLength = bytes.Length;
-            
+
             string ctype = context.Request.ContentType;
             if (String.IsNullOrEmpty(ctype)) {
               req.ContentType = "application/x-www-form-urlencoded";
@@ -61,13 +76,13 @@ public class proxy : IHttpHandler {
             else {
               req.ContentType = ctype;
             }
-            
+
             using (Stream outputStream = req.GetRequestStream())
             {
                 outputStream.Write(bytes, 0, bytes.Length);
             }
         }
-    
+
         // Send the request to the server
         System.Net.WebResponse serverResponse = null;
         try
@@ -82,7 +97,7 @@ public class proxy : IHttpHandler {
             response.End();
             return;
         }
-        
+
         // Set up the response to the client
         if (serverResponse != null) {
             response.ContentType = serverResponse.ContentType;
@@ -90,7 +105,7 @@ public class proxy : IHttpHandler {
             {
 
                 // Text response
-                if (serverResponse.ContentType.Contains("text") || 
+                if (serverResponse.ContentType.Contains("text") ||
                     serverResponse.ContentType.Contains("json"))
                 {
                     using (StreamReader sr = new StreamReader(byteStream))
@@ -119,7 +134,7 @@ public class proxy : IHttpHandler {
         }
         response.End();
     }
- 
+
     public bool IsReusable {
         get {
             return false;
@@ -150,11 +165,11 @@ public class proxy : IHttpHandler {
         {
             if (e is ApplicationException)
                 throw e;
-            
+
             // just return an empty string at this point
             // -- may want to throw an exception, or add to a log file
         }
-        
+
         return string.Empty;
     }
 }
