@@ -11,6 +11,8 @@ Park and Recreation Finder is a configuration of ArcGIS for Server and a JavaScr
 How To Use
 ----------
 
+Find out more about the application and download sample data - [Data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389)
+
 This application uses the 2.8 version of [Esri's ArcGIS API for JavaScript](http://help.arcgis.com/en/webapi/javascript/arcgis/index.html); see the site for concepts, samples, and a reference for using the API to create mapping web sites.
 
 [Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/) on the ArcGIS Resource Center can guide you in the setup and configuration of your app.
@@ -19,10 +21,6 @@ This application uses the 2.8 version of [Esri's ArcGIS API for JavaScript](http
 
 Requirements
 ------------
-
-* Find out more about the application and download sample data - [Data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389)
-
-* ArcGIS for Desktop 10.1 - [About](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 
 * ArcGIS for Server 10.1 - [About](http://www.esri.com/software/arcgis/arcgisserver)
 
