@@ -6,7 +6,7 @@ that allows citizens to locate park and recreation opportunities in their commun
 used by citizens to locate a park in their community that offers a recreation activity they are interested in, but
 can also be used by visitors to locate a park in a community they are visiting.
 
-[View sample Park Finder application.](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
+[View sample Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
 ## Features
 
@@ -20,13 +20,16 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of yo
 
 ## Requirements
 
+* Local Government Information Model - [About](http://www.arcgis.com/home/item.html?id=5f799e6d23d94e25b5aaaf2a58e63fb1)
+
 * ArcGIS for Server 10.1 - [About](http://www.esri.com/software/arcgis/arcgisserver)
 
 * Microsoft ASP.net Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
 ## Resources
 
-Additional [information and sample data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389) are available for the application.
+Additional [information and sample data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389)
+are available for the application.
 
 This application uses the 2.8 version of
 [Esri's ArcGIS API for JavaScript](http://help.arcgis.com/en/webapi/javascript/arcgis/index.html);
