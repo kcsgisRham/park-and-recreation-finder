@@ -8,6 +8,8 @@ can also be used by visitors to locate a park in a community they are visiting.
 
 [Try the Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
+![Image of Park and Recreation Finder application](https://raw.github.com/MikeTschudi/LGOnline/master/screen.png "Park and Recreation Finder application")
+
 ## Features
 
 * Search for a park by name, by current location, by address, or by activity
@@ -21,7 +23,7 @@ can also be used by visitors to locate a park in a community they are visiting.
 Esri's sample services can be used with this repository to extend the application.
 
 ### Your Services
- 
+
 [Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/)
 on the ArcGIS Resource Center can guide you in the setup and configuration of the app with your services.
 
