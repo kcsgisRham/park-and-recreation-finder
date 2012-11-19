@@ -6,7 +6,7 @@ that allows citizens to locate park and recreation opportunities in their commun
 used by citizens to locate a park in their community that offers a recreation activity they are interested in, but
 can also be used by visitors to locate a park in a community they are visiting.
 
-[View sample Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
+[Try the Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
 ## Features
 
