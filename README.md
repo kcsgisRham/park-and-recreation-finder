@@ -10,21 +10,32 @@ can also be used by visitors to locate a park in a community they are visiting.
 
 ## Features
 
-* Search for a park by name, by current location, by address, or by activities
-* Share park selection using social media
+* Search for a park by name, by current location, by address, or by activity
+* Review recreation activities at a given park and get directions to a park
+* Share park information using social media
 
 ## Instructions
 
+### Esri Sample Map Services
+
+Esri's sample services can be used with this repository to extend the application.
+
+### Your Map Services
+ 
 [Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/)
-on the ArcGIS Resource Center can guide you in the setup and configuration of your app.
+on the ArcGIS Resource Center can guide you in the setup and configuration of the app with your map services.
 
 ## Requirements
 
+### Esri Sample Services
+
+* Microsoft ASP.NET Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
+
+### Your Map Services
+
+* ArcGIS for Desktop 10.1 - Standard or Advanced - [About](http://www.esri.com/software/arcgis/arcgis-for-desktop)
+* ArcGIS for Server 10.1 - Standard or Advanced - [About](http://www.esri.com/software/arcgis/arcgisserver)
 * Local Government Information Model - [About](http://www.arcgis.com/home/item.html?id=5f799e6d23d94e25b5aaaf2a58e63fb1)
-
-* ArcGIS for Server 10.1 - [About](http://www.esri.com/software/arcgis/arcgisserver)
-
-* Microsoft ASP.net Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
 ## Resources
 
