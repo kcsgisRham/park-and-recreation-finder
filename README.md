@@ -16,14 +16,14 @@ can also be used by visitors to locate a park in a community they are visiting.
 
 ## Instructions
 
-### Esri Sample Map Services
+### Esri Sample Services
 
 Esri's sample services can be used with this repository to extend the application.
 
-### Your Map Services
+### Your Services
  
 [Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/)
-on the ArcGIS Resource Center can guide you in the setup and configuration of the app with your map services.
+on the ArcGIS Resource Center can guide you in the setup and configuration of the app with your services.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of th
 
 * Microsoft ASP.NET Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
-### Your Map Services
+### Your Services
 
 * ArcGIS for Desktop 10.1 - Standard or Advanced - [About](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 * ArcGIS for Server 10.1 - Standard or Advanced - [About](http://www.esri.com/software/arcgis/arcgisserver)
