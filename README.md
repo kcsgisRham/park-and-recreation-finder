@@ -1,5 +1,4 @@
 # park-and-recreation-finder
-**from [Esri's ArcGIS for Local Government team](http://resources.arcgis.com/en/communities/local-government/)**
 
 The Park and Recreation Finder application is a configuration of ArcGIS for Server and a JavaScript application
 that allows citizens to locate park and recreation opportunities in their community. This application is typically
@@ -41,6 +40,8 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of th
 * Microsoft ASP.NET Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 
 ## Resources
+
+Learn more about Esri's [ArcGIS for Local Government maps and apps](http://resources.arcgis.com/en/communities/local-government/).
 
 Additional [information and sample data](http://www.arcgis.com/home/item.html?id=a57e96b9240e4311b7fd863b80a6d389)
 are available for the application.
