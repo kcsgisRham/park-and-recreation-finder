@@ -26,6 +26,9 @@ Esri's sample services can be used with this repository to extend the applicatio
 [Detailed help](http://resources.arcgis.com/en/help/localgovernment/10.1/index.html#/What_is_Park_and_Recreation_Finder/028s00000003000000/)
 on the ArcGIS Resource Center can guide you in the setup and configuration of the app with your services.
 
+### General Help
+[New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
+
 ## Requirements
 
 ### Esri Sample Services
@@ -38,9 +41,6 @@ on the ArcGIS Resource Center can guide you in the setup and configuration of th
 * ArcGIS for Server 10.1 - Standard or Advanced - [About](http://www.esri.com/software/arcgis/arcgisserver)
 * Local Government Information Model - [About](http://www.arcgis.com/home/item.html?id=5f799e6d23d94e25b5aaaf2a58e63fb1)
 * Microsoft ASP.NET Framework 4.0 available from the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
-
-### General Help
-[New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ## Resources
 
