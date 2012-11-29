@@ -7,7 +7,7 @@ can also be used by visitors to locate a park in a community they are visiting.
 
 [Try the Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
-![Image of Park and Recreation Finder application](https://raw.github.com/Esri/park-and-recreation-finder/master/park-and-recreation-finder.png "Park and Recreation Finder application")
+[![Image of Park and Recreation Finder application](https://raw.github.com/Esri/park-and-recreation-finder/master/park-and-recreation-finder.png "Park and Recreation Finder application")](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
 ## Features
 
