@@ -328,7 +328,7 @@ function CreateActivityList() {
                 featureID = '';
                 CreateScrollbar(dojo.byId('divActivityListContainer'), dojo.byId('divActivityList'));
             }
-            if (parkCount == 0) {
+            if (activityCount > 0) {
                 newLeftOffice = 0;
                 featureID = featureSet.features[0].attributes[map.getLayer(devPlanLayerID).objectIdField];
                 if (!mapPoint) {
