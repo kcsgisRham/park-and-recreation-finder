@@ -1,4 +1,5 @@
-﻿/*
+﻿/*global dojo */
+/*
  | Version 10.2
  | Copyright 2012 Esri
  |
@@ -108,8 +109,7 @@ dojo.declare("js.Config", null, {
     // ServiceUrl is the REST end point for the reference overlay layer
     // DisplayOnLoad setting is used to show or hide the reference overlay layer. Reference overlay will be shown when it is set to true
 
-    ReferenceOverlayLayer:
-    {
+    ReferenceOverlayLayer: {
         ServiceUrl: "http://arcgis-two-1334003536.us-west-1.elb.amazonaws.com/arcgis/rest/services/TrailsOnlyDynamic/MapServer",
         DisplayOnLoad: true
     },
@@ -152,8 +152,7 @@ dojo.declare("js.Config", null, {
         DisplayText: "Park Website:",
         FieldName: "${PARKURL}",
         Alias: "Website"
-    }
-    ],
+    }],
 
     //Activities to be displayed in info window for a park
     Activities: [{
