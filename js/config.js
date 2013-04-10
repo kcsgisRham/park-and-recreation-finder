@@ -63,8 +63,7 @@ dojo.declare("js.Config", null, {
     ApplicationIcon: "images/appIcon.png",
 
     // Set splash window content - Message that appears when the application starts
-    SplashScreenMessage: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.",
-
+    SplashScreenMessage: "<b>Welcome to Park Finder</b> <br/> <hr/> <br/> The <b>Park Finder</b> application helps citizens locate a park or recreation facility and obtain information about recreation activities in their community.  This application is typically used by residents in a community, but can be used by visitors to locate a park or recreation area near them, or one that offers the activity they are interested in.<br/> <br/>To locate a park, simply enter an address or activity in the search box, or use your current location.  The park(s) or recreation area(s) will then be highlighted on the map and relevant information about available recreation activities presented to the user.<br/><br/>",
     // Set URL of help page/portal
     HelpURL: "help.htm",
 
@@ -82,7 +81,7 @@ dojo.declare("js.Config", null, {
         Key: "parcelMap",
         ThumbnailSource: "images/parcel.png",
         Name: "Parcel Map",
-        MapURL: "http://localgovtemplates.esri.com/ArcGIS/rest/services/ParcelPublicAccess/MapServer"
+        MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccessMI/MapServer"
     }],
 
     // Initial map extent. Use comma (,) to separate values and don t delete the last comma
@@ -304,7 +303,7 @@ dojo.declare("js.Config", null, {
     // ------------------------------------------------------------------------------------------------------------------------
 
     // Set geometry service URL
-    GeometryService: "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
+    GeometryService: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/Utilities/Geometry/GeometryServer",
 
     // ------------------------------------------------------------------------------------------------------------------------
     // DRIVING DIRECTIONS SETTINGS
