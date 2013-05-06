@@ -82,5 +82,5 @@ limitations under the License.
 A copy of the license is available in the repository's
 [license.txt](https://raw.github.com/Esri/park-and-recreation-finder/master/license.txt) file.
 
-[](Esri Tags: Local Government Park Recreation Finder)
+[](Esri Tags: Local-Government Local Government Park Recreation Finder)
 [](Esri Language: JavaScript)
