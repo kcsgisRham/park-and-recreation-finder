@@ -265,14 +265,14 @@ dojo.declare("js.Config", null, {
         ZoomLevel: 12,
         Locators: [{
             DisplayText: "Location",
-            LocatorDefaultAddress: "971 sylvan cir Naperville IL 60540",
+            LocatorDefaultAddress: "139 W Porter Ave Naperville IL 60540",
             LocatorParamaters: ["SingleLine"],
-            LocatorURL: "http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Address_NA_10/GeocodeServer",
+            LocatorURL: "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
             CandidateFields: "Loc_name, Score, Match_addr",
             DisplayField: "${Match_addr}",
             AddressMatchScore: 80,
             LocatorFieldName: "Loc_name",
-            LocatorFieldValues: ["US_Streets", "US_StreetName"]
+            LocatorFieldValues: ["USA.StreetName" , "USA.PointAddress", "USA.StreetAddress"]
         }, {
             DisplayText: "Name",
             LocatorDefaultPark: "Knoch Park"
