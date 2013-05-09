@@ -85,7 +85,7 @@ dojo.declare("js.Config", null, {
     }],
 
     // Initial map extent. Use comma (,) to separate values and don t delete the last comma
-    DefaultExtent: "-9820183.18, 5123332.08, -9807373.74, 5128739.76",
+    DefaultExtent: "-9816010,5123000,-9809970,5129500",
 
     // ------------------------------------------------------------------------------------------------------------------------
     // OPERATIONAL DATA SETTINGS
