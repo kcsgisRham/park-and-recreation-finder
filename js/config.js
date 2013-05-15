@@ -93,12 +93,12 @@ dojo.declare("js.Config", null, {
 
     // Configure operational layers:
     //URL used for doing query task on the parks layer
-    DevPlanLayer: "http://arcgis-localgov-61933129.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParkAttach/FeatureServer/2",
+    DevPlanLayer: "http://services.arcgis.com/b6gLrKHqgkQb393u/arcgis/rest/services/ParksTryItLive/FeatureServer/0",
     //Set the primary key attribute for parks
     PrimaryKeyForParks: "${FACILITYID}",
 
     //URL used for doing query task on the comments layer
-    ParkCommentsLayer: "http://arcgis-localgov-61933129.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParkAttach/FeatureServer/5",
+    ParkCommentsLayer: "http://services.arcgis.com/b6gLrKHqgkQb393u/arcgis/rest/services/ParksTryItLive/FeatureServer/1",
     //Set the primary key attribute for comments
     PrimaryKeyForComments: "${FACILITYID}",
 
