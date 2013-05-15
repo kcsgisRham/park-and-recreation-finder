@@ -75,12 +75,12 @@ dojo.declare("js.Config", null, {
     BaseMapLayers: [{
         Key: "topoMap",
         ThumbnailSource: "images/topographic.jpg",
-        Name: "Topographic Map",
+        Name: "Topographic",
         MapURL: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
     }, {
         Key: "parcelMap",
         ThumbnailSource: "images/parcel.png",
-        Name: "Parcel Map",
+        Name: "Streets",
         MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccessMI/MapServer"
     }],
 
@@ -241,10 +241,10 @@ dojo.declare("js.Config", null, {
     //Set the locator ripple size
     LocatorRippleSize: 30,
 
-    //Set this variable to true/false to enable/disable directions for Mobile/tablet
-    GetDirectionsMobile: true,
+    //Set this variable to true/false to enable/disable using geolocation by default for Mobile/tablet
+    GetDirectionsMobile: false,
 
-    //Set this variable to true/false to enable/disable directions for desktop
+    //Set this variable to true/false to enable/disable using geolocation by default for desktop
     GetDirectionsDesktop: true,
 
     //Set this variable to true/false to enable/disable directions
