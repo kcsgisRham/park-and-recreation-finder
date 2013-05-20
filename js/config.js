@@ -63,7 +63,7 @@ dojo.declare("js.Config", null, {
     ApplicationIcon: "images/appIcon.png",
 
     // Set splash window content - Message that appears when the application starts
-    SplashScreenMessage: "<b>Welcome to Park Finder</b> <br/> <hr/> <br/> The <b>Park Finder</b> application helps citizens locate a park or recreation facility and obtain information about recreation activities in their community.  <br/>To locate a park, simply enter an address or activity in the search box, or use your current location.<br/>The park(s) or recreation area(s) will then be highlighted on the map and relevant information about available recreation activities presented to the user.<br/><br/>",
+    SplashScreenMessage: "<b>Welcome to Park Finder</b> <br/> <hr/> <br/> The <b>Park Finder</b> application helps citizens locate a park or recreation facility and obtain information about recreation activities in their community.  <br/><br/>To locate a park, simply enter an address or activity in the search box, or use your current location. The park(s) or recreation area(s) will then be highlighted on the map and relevant information about available recreation activities presented to the user.<br/><br/>",
     // Set URL of help page/portal
     HelpURL: "help.htm",
 
