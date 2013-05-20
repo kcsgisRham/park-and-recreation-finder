@@ -244,13 +244,13 @@ dojo.declare("js.Config", null, {
     BufferColor: [0, 100, 0],
 
     //Set the locator ripple size
-    LocatorRippleSize: 30,
+    LocatorRippleSize: 40,
 
     //Set this variable to true/false to enable/disable using geolocation by default for Mobile/tablet
-    GetDirectionsMobile: false,
+    GetDirectionsMobile: true,
 
     //Set this variable to true/false to enable/disable using geolocation by default for desktop
-    GetDirectionsDesktop: true,
+    GetDirectionsDesktop: false,
 
     //Set this variable to true/false to enable/disable directions
     //if this master variable is set to false directions cannot be enabled for any of the devices
