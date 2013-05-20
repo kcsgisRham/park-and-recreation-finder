@@ -114,7 +114,7 @@ dojo.declare("js.Config", null, {
     // DisplayOnLoad setting is used to show or hide the reference overlay layer. Reference overlay will be shown when it is set to true
 
     ReferenceOverlayLayer: {
-        ServiceUrl: "http://arcgis-two-1334003536.us-west-1.elb.amazonaws.com/arcgis/rest/services/TrailsOnlyDynamic/MapServer",
+        ServiceUrl: "http://ec2-54-214-140-9.us-west-2.compute.amazonaws.com:6080/arcgis/rest/services/Trails/MapServer",
         DisplayOnLoad: true
     },
 
