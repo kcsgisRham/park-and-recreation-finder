@@ -244,7 +244,7 @@ dojo.declare("js.Config", null, {
     BufferColor: [0, 100, 0],
 
     //Set the locator ripple size
-    LocatorRippleSize: 40,
+    LocatorRippleSize: 34,
 
     //Set this variable to true/false to enable/disable using geolocation by default for Mobile/tablet
     GetDirectionsMobile: true,
