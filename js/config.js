@@ -81,7 +81,7 @@ dojo.declare("js.Config", null, {
         Key: "parcelMap",
         ThumbnailSource: "images/parcel.png",
         Name: "Streets",
-        MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccessMI/MapServer"
+        MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccess/MapServer"
     },{
         Key: "imageryMap",
         ThumbnailSource: "images/imagery.jpg",
