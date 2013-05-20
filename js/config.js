@@ -267,7 +267,7 @@ dojo.declare("js.Config", null, {
             width: 35,
             height: 35
         },
-        ZoomLevel: 12,
+        ZoomLevel: 6,
         Locators: [{
             DisplayText: "Location",
             LocatorDefaultAddress: "139 W Porter Ave Naperville IL 60540",
