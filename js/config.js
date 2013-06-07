@@ -82,7 +82,7 @@ dojo.declare("js.Config", null, {
         ThumbnailSource: "images/parcel.png",
         Name: "Streets",
         MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccess/MapServer"
-    },{
+    }, {
         Key: "imageryMap",
         ThumbnailSource: "images/imagery.jpg",
         Name: "Imagery",
@@ -277,7 +277,7 @@ dojo.declare("js.Config", null, {
             DisplayField: "${Match_addr}",
             AddressMatchScore: 80,
             LocatorFieldName: "Loc_name",
-            LocatorFieldValues: ["USA.StreetName" , "USA.PointAddress", "USA.StreetAddress"]
+            LocatorFieldValues: ["USA.StreetName", "USA.PointAddress", "USA.StreetAddress"]
         }, {
             DisplayText: "Name",
             LocatorDefaultPark: "Knoch Park"
