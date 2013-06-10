@@ -115,7 +115,7 @@ dojo.declare("js.Config", null, {
 
     ReferenceOverlayLayer: {
         ServiceUrl: "http://ec2-54-214-140-9.us-west-2.compute.amazonaws.com:6080/arcgis/rest/services/Trails/MapServer",
-        DisplayOnLoad: true
+        DisplayOnLoad: false
     },
 
     // ------------------------------------------------------------------------------------------------------------------------
