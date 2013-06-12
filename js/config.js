@@ -341,7 +341,7 @@ dojo.declare("js.Config", null, {
 
         FacebookShareURL: "http://www.facebook.com/sharer.php?u=${0}&t=Parks%20and%20Recreation%20Finder",
         TwitterShareURL: "http://mobile.twitter.com/compose/tweet?status=Parks%20and%20Recreation%20Finder ${0}",
-        ShareByMailLink: "mailto:%20?subject=Checkout%20this%20map!&body=${0}"
+        ShareByMailLink: "mailto:%20?subject=Check%20out%20this%20map!&body=${0}"
     },
     // ------------------------------------------------------------------------------------------------------------------------
     // SETTINGS FOR INFOPODS
