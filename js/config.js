@@ -81,12 +81,12 @@ dojo.declare("js.Config", null, {
         Key: "parcelMap",
         ThumbnailSource: "images/parcel.png",
         Name: "Streets",
-        MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ParcelPublicAccess/MapServer"
+        MapURL: "http://tryitlive.arcgis.com/arcgis/rest/services/GeneralPurpose/MapServer"
     }, {
         Key: "imageryMap",
         ThumbnailSource: "images/imagery.jpg",
         Name: "Imagery",
-        MapURL: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/ImageryHybrid/MapServer"
+        MapURL: "http://tryitlive.arcgis.com/arcgis/rest/services/ImageryHybrid/MapServer"
     }],
 
     // Initial map extent. Use comma (,) to separate values and don t delete the last comma
@@ -114,8 +114,8 @@ dojo.declare("js.Config", null, {
     // DisplayOnLoad setting is used to show or hide the reference overlay layer. Reference overlay will be shown when it is set to true
 
     ReferenceOverlayLayer: {
-        ServiceUrl: "http://ec2-54-214-140-9.us-west-2.compute.amazonaws.com:6080/arcgis/rest/services/Trails/MapServer",
-        DisplayOnLoad: false
+        ServiceUrl: "http://tryitlive.arcgis.com/arcgis/rest/services/Trails/MapServer",
+        DisplayOnLoad: true
     },
 
     // ------------------------------------------------------------------------------------------------------------------------
@@ -308,7 +308,7 @@ dojo.declare("js.Config", null, {
     // ------------------------------------------------------------------------------------------------------------------------
 
     // Set geometry service URL
-    GeometryService: "http://arcgis-tenone2012-1974758903.us-west-1.elb.amazonaws.com/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+    GeometryService: "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
 
     // ------------------------------------------------------------------------------------------------------------------------
     // DRIVING DIRECTIONS SETTINGS
