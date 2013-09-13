@@ -1,5 +1,7 @@
 # park-and-recreation-finder
 
+This park-and-recreation-finder repro is still open for contribution and development however, this is not the version delivered to ArcGIS for Local Government user community for 10.2. That source code for the Parks Finder application delivered at 10.2 is in the configurable-place-finder repro [configurable-place-finder application](https://github.com/Esri/configurable-place-finder).
+
 The Park and Recreation Finder application is a configuration of ArcGIS for Server and a JavaScript application
 that allows citizens to locate park and recreation opportunities in their community. This application is typically
 used by citizens to locate a park in their community that offers a recreation activity they are interested in, but
