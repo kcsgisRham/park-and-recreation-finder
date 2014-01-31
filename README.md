@@ -9,7 +9,7 @@ can also be used by visitors to locate a park in a community they are visiting.
 
 [Try the Park Finder application](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
-[![Image of Park and Recreation Finder application](https://raw.github.com/Esri/park-and-recreation-finder/master/park-and-recreation-finder.png "Park and Recreation Finder application")](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
+[![Image of Park and Recreation Finder application](park-and-recreation-finder.png "Park and Recreation Finder application")](http://localgovtemplates2.esri.com/ParkFinder/default.htm)
 
 ## Features
 
@@ -83,7 +83,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 A copy of the license is available in the repository's
-[LICENSE.txt](https://raw.github.com/Esri/park-and-recreation-finder/master/LICENSE.txt) file.
+[LICENSE.txt](LICENSE.txt) file.
 
 [](Esri Tags: Local-Government Local Government Park Recreation Finder)
 [](Esri Language: JavaScript)
